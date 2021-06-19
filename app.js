@@ -57,7 +57,7 @@ class UI {
             <td><img src="${product.photo}" width = "300px;" height="200px;"</td>
             <td style="text-align: left; vertical-align: middle; font-size: 16px;">${product.name}</td>
             <td style="text-align: left; vertical-align: middle; font-size: 16px;">${product.type}</td>
-            <td style="text-align: left; vertical-align: middle; font-size: 16px;">${product.price}</td>
+            <td style="text-align: left; vertical-align: middle; font-size: 16px;">${product.price} zł</td>
             <td style="text-align: left; vertical-align: middle;"><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
         `;
 
