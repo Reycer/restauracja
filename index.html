@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <title>Restaurant Menu App</title>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+        <!-- HEAD -->
+        <h1 class="display-4 text-center">
+            <i class="fas fa-utensils text-primary"></i>Restaurant<span class="text-primary">Menu</span>App
+        </h1>
+
+        <button id="showhide" onclick="showHide()" class="btn btn-primary btn-block">Formularz </button>
+
+        <div id="form">
+            <!-- Formularz -->
+            <form id="product-form">
+                <div class="form-group">
+                    <label for="photo">Zdjęcie [URL]</label>
+                    <input type="url" id="photo" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="name">Danie</label>
+                    <input type="text" id="name" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="type">Typ</label>
+                    <select class="form-control" id="type">
+                <option selected="selected">Śniadanie</option>
+                <option >Obiad</option>
+                <option >Kolacja</option>
+                <option >Deser</option>
+            </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Cena</label>
+                    <input type="number" id="price" class="form-control" step=0.1 />
+                </div>
+
+
+
+                <input type="submit" value="Dodaj" class="btn btn-primary btn-block" />
+            </form>
+
+        </div>
+
+        <!--   <div class="container">
+            <div class="mt-5 col-md-12 text-center">
+                <button type="button" class="btn btn-primary">Wszystko</button>
+                <button type="button" class="btn btn-primary">Śniadania</button>
+                <button type="button" class="btn btn-primary">Obiady</button>
+                <button type="button" class="btn btn-primary">Kolacje</button>
+            </div>
+        </div>
+        -->
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Zdjęcie</th>
+                    <th>Danie</th>
+                    <th>Typ</th>
+                    <th>Cena</th>
+                    <th>Usuń</th>
+                    <!-- <th>Edytuj</th> -->
+                </tr>
+            </thead>
+
+            <tbody id="product-list">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.getElementById("showhide").click();
+    </script>
+
+</body>
+
+</html>
